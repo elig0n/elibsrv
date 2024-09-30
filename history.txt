@@ -1,0 +1,63 @@
+
+*** elibsrv changelog ***
+
+
+version 20170325:
+ - amount of random books is configurable via the 'randcount' parameter,
+ - ebook file names are normalized to avoid weird characters (like colons).
+
+version 20161220:
+ - implemented pagination (along with the 'pagesize' configuration parameter).
+
+version 20160905:
+ - shell argument passed to kindlegen is properly escaped,
+ - authors index presents a first-letter quick lookup table,
+ - fixed a bug leading to epub titles being truncated if a ':' is present.
+
+version 20151224:
+ - migrated the db backend from PostgreSQL to SQLite.
+
+version 20151220:
+ - added PDF support,
+ - invalid language metada are ignored,
+ - safari browsers get the html view by default (as used by Kindle),
+ - html output optimized for small screens,
+ - added support for kindlegen to convert ePubs to MOBI files on the fly,
+ - web frontend detects missing libraries instead of returning a blank page,
+ - optimized the html frontend for small screens,
+ - boosted library scanning performances by 200% (only changes are synced).
+
+version 20151212:
+ - added publisher and publishing date to the OPDS output,
+ - refactored output code into different 'plugins' for each type of output,
+ - switched the html interface to a sans-serif font for better readability,
+ - the biggest image is elected as cover image if no explicit cover found,
+ - added a configurable 'verbose' mode to the backend for easier debugging,
+ - added a 'dump' output pluging for debugging purposes,
+ - epub backend stores extra sql data: filesize, last modification, filename.
+
+version 20141029:
+ - added czechoslovakian and kashubian country flags,
+ - implemented a local cache for thumbnails (much faster).
+
+version 20141026:
+ - detecting 'trident' IE versions as being html clients,
+ - html book listings are two-lines now (author and title in separate lines),
+ - added a 'latest books' menu,
+ - removed spurious 'NOTICE' messages coming from sql.
+
+version 20140525:
+ - added the 'pretty urls' feature.
+
+version 20140521:
+ - support for custom configuration files,
+ - epub files are returned with more human filenames.
+
+version 20140520:
+ - implemented displaying of cover images,
+ - added a favicon,
+ - configurable title for the ebooks collection,
+ - OPDS search feature.
+
+version 20140517:
+ - first public release.
