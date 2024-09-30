@@ -134,7 +134,7 @@ int main(int argc, char **argv) {
 
   /* elibsrv must be called with exactly one parameter, and the parameter can't be empty or start with a dash */
   if ((argc < 2) || (argc > 3) || (argv[1][0] == '-') || (argv[1][0] == 0)) {
-    puts("Usage example: find /pathtoepubs/ -iname *\\.epub | elibsrv /etc/elibsrv.conf [-v]");
+    puts("Usage example: find /pathtoepubs/ -iname \\*.epub | elibsrv /etc/elibsrv.conf [-v]");
     return(1);
   }
 
